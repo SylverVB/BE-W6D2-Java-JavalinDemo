@@ -8,12 +8,49 @@
   <name>JavalinDemo</name>
   <url>http://maven.apache.org</url>
   <dependencies>
+    <!-- JUnit 5 for Testing (API) -->
+    <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
     <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
+        <groupId>org.junit.jupiter</groupId>
+        <artifactId>junit-jupiter-api</artifactId>
+        <version>5.11.4</version>
+        <scope>test</scope>
     </dependency>
+
+    <!-- JUnit 5 for Testing (Engine) -->
+    <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-engine -->
+    <dependency>
+        <groupId>org.junit.jupiter</groupId>
+        <artifactId>junit-jupiter-engine</artifactId>
+        <version>5.11.4</version>
+        <scope>test</scope>
+    </dependency>
+
+    <!-- AssertJ for fluent assertions -->
+    <!-- https://mvnrepository.com/artifact/org.assertj/assertj-core -->
+    <dependency>
+        <groupId>org.assertj</groupId>
+        <artifactId>assertj-core</artifactId>
+        <version>3.27.3</version>
+        <scope>test</scope>
+    </dependency>
+
+    <dependency>
+        <groupId>io.javalin</groupId>
+        <artifactId>javalin-testtools</artifactId>
+        <version>5.6.2</version>
+        <scope>test</scope>
+    </dependency>
+
+    <!-- REST Assured -->
+    <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
+    <dependency>
+        <groupId>io.rest-assured</groupId>
+        <artifactId>rest-assured</artifactId>
+        <version>5.5.1</version>
+        <scope>test</scope>
+    </dependency>
+
     <!-- We can build and package this application as a JAR file and run the output JAR like any other Java program. The syntax for running a JAR file is as follows: java -jar myjar.jar. Since we are using Maven, we will add this to our build instead: -->
     <dependency>
         <groupId>io.javalin</groupId>
